@@ -33,6 +33,26 @@ class Tareas {
         this._listado[tarea.id] = tarea
         
     }
+
+    listadoCompletado(){
+        //1: en verde
+        // Completada: verde
+        // Pendiente en rojo
+
+        this.listadoArr.forEach((tarea, i) => {
+        const idx = `${i + 1}`.green;
+        const { desc, completadoEn } = tarea;
+        const estado = ( completadoEn ) 
+                            ? 'Completada'.green
+                            : 'Pendiente'.red;
+
+        console.log(`${ idx } ${ desc } :: ${ estado }`);
+        });
+    }
+
+    listarPendientesCompletadas( completadas = true ) {
+        
+    }
     
     
 }

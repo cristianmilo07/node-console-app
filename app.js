@@ -33,13 +33,14 @@ const main = async () => {
         break;
         
         case '2':
-            console.log(tareas.listadoArr)
+            //console.log(tareas.listadoArr)
+            tareas.listadoCompletado()
         break;
         
 
     }
 
-    //guardarDB(tareas.listadoArr);
+    guardarDB(tareas.listadoArr);
 
      await pausa();
 
