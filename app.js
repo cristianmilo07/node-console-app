@@ -36,6 +36,14 @@ const main = async () => {
             //console.log(tareas.listadoArr)
             tareas.listadoCompletado()
         break;
+
+        case '3': //listar completadas
+            tareas.listarPendientesCompletadas()
+        break;
+
+        case '4': //listar completadas
+            tareas.listarPendientesCompletadas(false)
+        break;
         
 
     }
